@@ -29,7 +29,7 @@ function iniciarRelogio() {
     timer = setInterval(function() {
         segundos++;
         relogio.innerHTML = getTimeFromSeconds(segundos);
-    }, 1);
+    }, 1000);
 }
 
 function pausarRelogio() {

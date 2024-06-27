@@ -26,6 +26,10 @@ function recebeEventoForm(evento) {
 
     const msg = `Seu IMC é ${imc} (${nivelImc}).`;
 
+    if (imc < 18.5 || imc >= 24.9) {
+        setResultado(msg, false);
+        return;
+    }
     setResultado(msg, true);
 }
 
